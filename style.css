@@ -93,3 +93,11 @@ nav {
     flex-direction: column;
     align-items: center;
 }
+
+.about-me__info--para {
+    color: grey;
+}
+
+.text--green {
+    color: #047800;
+}
