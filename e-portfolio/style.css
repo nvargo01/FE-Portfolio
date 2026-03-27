@@ -162,7 +162,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 500px;
+    max-width: 500px;
     margin: 0 auto;
     text-align: center;
 }
@@ -277,7 +277,7 @@ nav {
 
 .language__img {
     width: 100%;
-    min-width: 100px;
+    max-width: 100px;
     transition: all 300ms ease;
 }
 
@@ -384,7 +384,7 @@ nav {
     top: 50%;
     left: 90px;
     transform: translateY(100%);
-    min-width: 550px;
+    max-width: 550px;
     z-index: 3;
     opacity: 0;
     transition: transform 450ms, opacity 300ms;
@@ -438,7 +438,7 @@ footer {
 
 .footer__social--list {
     width: 100%;
-    min-width: 500px;
+    max-width: 500px;
     display: flex;
     justify-content: space-around;
     margin-bottom: 28px;
