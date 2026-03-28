@@ -55,11 +55,6 @@ p {
     line-height: 1.5;
 }
 
-svg:not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: hidden;
-}
-
 .section__tag {
     font-size: 16px;
     color: #6415ff;
