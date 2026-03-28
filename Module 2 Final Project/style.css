@@ -55,6 +55,11 @@ p {
     line-height: 1.5;
 }
 
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
 .section__tag {
     font-size: 16px;
     color: #6415ff;
@@ -564,9 +569,35 @@ header {
     align-items: center;
 }
 
+.step {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.step__para {
+    font-size: 14px;
+    color: #718096;
+    margin-top: 12px;
+    font-weight: 500;
+    line-height: 2;
+}
+
 .steps__description,
 .steps__img--wrapper {
     width: 50%;
+}
+
+.steps__description {
+    padding: 32 0;
+    padding-left: 64px;
+}
+
+.step__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    max-width: 320px;
 }
 
 .steps__img--wraper {
@@ -576,6 +607,20 @@ header {
 
 .steps__img {
     z-index: 2;
+}
+
+.step__number {
+    color: #cbd5e0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #243e63;
+    line-height: 1;
 }
 
 .img {
@@ -593,4 +638,14 @@ header {
     z-index: -10;
     color: rgb(100, 21, 255);
     fill: currentColor;
+}
+
+
+
+@media (max-width: 1280px) {
+    .steps_grid {
+        height: 5rem;
+        width: 5rem;
+        bottom: -50px;
+    }
 }
