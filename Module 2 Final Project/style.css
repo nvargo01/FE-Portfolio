@@ -1213,6 +1213,22 @@ footer {
     cursor: pointer;
 }
 
+.footer__column--link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+.footer__column--link:hover:after {
+    opacity: 1;
+}
+
 .footer__divider {
     width: 100%;
     height: 2px;
@@ -1245,7 +1261,7 @@ footer {
 }
 
 .footer__copyright {
-    color: #f7fafc;
+    color: #cbd5e0;
     font-weight: 500;
 }
 
@@ -1265,6 +1281,10 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms ease;
+}
+
+.footer__social--link:hover {
+    opacity: 0.75;
 }
 
 .footer__social--link svg {
